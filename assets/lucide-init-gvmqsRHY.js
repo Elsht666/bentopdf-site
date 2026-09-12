@@ -1,1 +1,0 @@
-import{n as e,t}from"./lucide-Cq8Woiby.js";document.addEventListener(`DOMContentLoaded`,()=>{t({icons:e})});

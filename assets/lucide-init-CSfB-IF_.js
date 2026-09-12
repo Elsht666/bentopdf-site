@@ -1,0 +1,1 @@
+import{n as e,t}from"./lucide-DRIaDrOP.js";document.addEventListener(`DOMContentLoaded`,()=>{t({icons:e})});
