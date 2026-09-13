@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="es" dir="ltr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Advanced Features Settings - Configure WASM Modules | BentoPDF
+    </title>
+    <meta name="title" content="Advanced Features Settings - Configure WASM Modules | BentoPDF">
+    <meta name="description" content="Configure advanced PDF processing modules for BentoPDF. Enable features like PDF/A conversion, document extraction, and more.">
+    <meta name="keywords" content="wasm settings, pdf processing, advanced features">
+    <meta name="author" content="BentoPDF">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Canonical URL -->
+
+    <!-- Mobile Web App -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="WASM Settings">
+
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <script type="module" crossorigin="" src="/assets/wasm-settings-CwIi80Q_.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/lucide-Cq8Woiby.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/lucide-init-gvmqsRHY.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/main-B72TG19P.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/mobileMenu-7j8PZpA7.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/simple-mode-footer-ByGEpRzT.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/wasm-provider-DJTIAcuX.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/pymupdf-loader-iAjNt9sU.js">
+    <link rel="modulepreload" crossorigin="" href="/assets/ghostscript-dynamic-loader-CE2V9sZb.js">
+    <link rel="stylesheet" crossorigin="" href="/assets/lucide-B95StCWN.css">
+    <link rel="stylesheet" crossorigin="" href="/assets/style-sLy6fTTc.css">
+  <link rel="alternate" hreflang="ar" href="https://pdf1.cc.cd/ar/wasm-settings"><link rel="alternate" hreflang="be" href="https://pdf1.cc.cd/be/wasm-settings"><link rel="alternate" hreflang="da" href="https://pdf1.cc.cd/da/wasm-settings"><link rel="alternate" hreflang="de" href="https://pdf1.cc.cd/de/wasm-settings"><link rel="alternate" hreflang="en" href="https://pdf1.cc.cd/wasm-settings"><link rel="alternate" hreflang="es" href="https://pdf1.cc.cd/es/wasm-settings"><link rel="alternate" hreflang="fr" href="https://pdf1.cc.cd/fr/wasm-settings"><link rel="alternate" hreflang="id" href="https://pdf1.cc.cd/id/wasm-settings"><link rel="alternate" hreflang="it" href="https://pdf1.cc.cd/it/wasm-settings"><link rel="alternate" hreflang="ja" href="https://pdf1.cc.cd/ja/wasm-settings"><link rel="alternate" hreflang="ko" href="https://pdf1.cc.cd/ko/wasm-settings"><link rel="alternate" hreflang="nl" href="https://pdf1.cc.cd/nl/wasm-settings"><link rel="alternate" hreflang="pt" href="https://pdf1.cc.cd/pt/wasm-settings"><link rel="alternate" hreflang="ru" href="https://pdf1.cc.cd/ru/wasm-settings"><link rel="alternate" hreflang="sk" href="https://pdf1.cc.cd/sk/wasm-settings"><link rel="alternate" hreflang="sv" href="https://pdf1.cc.cd/sv/wasm-settings"><link rel="alternate" hreflang="tr" href="https://pdf1.cc.cd/tr/wasm-settings"><link rel="alternate" hreflang="uk" href="https://pdf1.cc.cd/uk/wasm-settings"><link rel="alternate" hreflang="vi" href="https://pdf1.cc.cd/vi/wasm-settings"><link rel="alternate" hreflang="zh" href="https://pdf1.cc.cd/zh/wasm-settings"><link rel="alternate" hreflang="zh-TW" href="https://pdf1.cc.cd/zh-TW/wasm-settings"><link rel="alternate" hreflang="x-default" href="https://pdf1.cc.cd/wasm-settings"><link rel="canonical" href="https://pdf1.cc.cd/es/wasm-settings"></head>
+
+  <body class="antialiased bg-gray-900">
+    
+    <nav class="bg-gray-900 border-b border-white/10 sticky top-0 z-30" style="display: none">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0 flex items-center cursor-pointer" id="home-logo">
+            <img id="nav-logo" src="/images/favicon-no-bg.svg" alt="Bento PDF Logo" class="h-8 w-8">
+            <span id="nav-brand" class="text-white font-bold text-xl ml-2">
+              <a href="/es/">BentoPDF</a>
+            </span>
+          </div>
+    
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex flex-1 items-center justify-center space-x-8">
+            <a href="/es/" class="nav-link" data-i18n="nav.home">Inicio</a>
+            <a href="/es/about" class="nav-link" data-i18n="nav.about">Acerca de</a>
+            <a href="/es/contact" class="nav-link" data-i18n="nav.contact">Contacto</a>
+            <a href="/es/licensing" class="nav-link" data-i18n="nav.licensing">Licencias</a>
+            <div class="nav-products">
+              <button id="products-menu-button" type="button" class="nav-link nav-products-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="products-menu">
+                <span>Products</span>
+                <i data-lucide="chevron-down" class="nav-products-chevron"></i>
+              </button>
+              <div id="products-menu" class="nav-products-menu" role="menu" hidden="">
+                <a href="/es/kura" role="menuitem">
+                  <span class="nav-product-text">
+                    <b>Kura</b>
+                    <small>PDF/A, PDF/UA and PDF/X conversion engine.</small>
+                  </span>
+                </a>
+                <a href="/es/hyper-compress" role="menuitem">
+                  <span class="nav-product-text">
+                    <b>Hyper Compress</b>
+                    <small>Content-preserving PDF compression engine.</small>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <a href="/blog" class="nav-link">Blog</a>
+          </div>
+    
+          <!-- Mobile Hamburger Button -->
+          <div class="md:hidden flex items-center gap-4">
+            <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 transition-colors" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only" data-i18n="nav.openMainMenu">Abrir menú principal</span>
+              <!-- Hamburger Icon -->
+              <svg id="menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <!-- Close Icon -->
+              <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Mobile Menu Dropdown -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-white/10">
+        <div class="px-2 pt-2 pb-3 space-y-1 text-center">
+          <a href="/es/" class="mobile-nav-link" data-i18n="nav.home">Inicio</a>
+          <a href="/es/about" class="mobile-nav-link" data-i18n="nav.about">Acerca de</a>
+          <a href="/es/contact" class="mobile-nav-link" data-i18n="nav.contact">Contacto</a>
+          <a href="/es/licensing" class="mobile-nav-link" data-i18n="nav.licensing">Licencias</a>
+          <button id="mobile-products-button" type="button" class="mobile-nav-link mobile-products-trigger" aria-expanded="false" aria-controls="mobile-products-menu">
+            <span>Products</span>
+            <i data-lucide="chevron-down" class="mobile-products-chevron"></i>
+          </button>
+          <div id="mobile-products-menu" class="mobile-products-menu" hidden="">
+            <a href="/es/kura" class="mobile-nav-link">Kura</a>
+            <a href="/es/hyper-compress" class="mobile-nav-link">Hyper Compress</a>
+          </div>
+          <a href="/blog" class="mobile-nav-link">Blog</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="uploader" class="min-h-screen flex flex-col items-center justify-start py-12 p-4 bg-gray-900">
+      <div id="tool-uploader" class="bg-gray-800 rounded-xl shadow-xl px-4 py-8 md:p-8 max-w-2xl w-full text-gray-200 border border-gray-700">
+        <button id="back-to-tools" class="flex items-center gap-2 text-indigo-300 hover:text-indigo-400 mb-6 font-semibold">
+          <i data-lucide="arrow-left" class="cursor-pointer"></i>
+          <span class="cursor-pointer" data-i18n="tools.backToTools">Volver a Herramientas</span>
+        </button>
+
+        <h1 class="text-2xl font-bold text-white mb-2" data-i18n="tools:wasmSettings.title">Configuración de funciones avanzadas</h1>
+        <p class="text-gray-400 mb-6" data-i18n="tools:wasmSettings.description">Configura módulos de procesamiento externos para habilitar funciones avanzadas de PDF. Estos módulos son opcionales y tienen licencia separada.</p>
+
+        <!-- Info Banner -->
+        <div class="bg-green-900/30 border border-green-600/50 rounded-lg p-4 mb-6">
+          <div class="flex items-start gap-3">
+            <i data-lucide="check-circle" class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-green-200 text-sm">
+                <strong data-i18n="tools:wasmSettings.preconfiguredTitle">Preconfigurado y listo para usar.</strong>
+                <span data-i18n="tools:wasmSettings.preconfiguredDescription">Los módulos avanzados de procesamiento se cargan automáticamente desde CDN. Puedes anular las URL siguientes si necesitas usar una fuente personalizada (p. ej., para implementaciones air-gapped o autoalojadas).</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PyMuPDF Section -->
+        <div class="space-y-6">
+          <div class="bg-gray-700/50 rounded-lg p-4 border border-gray-600">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="font-semibold text-white">PyMuPDF</h3>
+                <p class="text-xs text-gray-400" data-i18n="tools:wasmSettings.pymupdfSubtitle">Motor de procesamiento de documentos</p>
+              </div>
+              <span id="pymupdf-status" class="text-xs px-2 py-1 rounded-full bg-gray-600 text-gray-300" data-i18n="tools:wasmSettings.status.notConfigured">No configurado</span>
+            </div>
+            <p class="text-sm text-gray-400 mb-3" data-i18n="tools:wasmSettings.pymupdfFeatures">Habilita: PDF a Texto, Markdown, SVG, DOCX, Excel • Extraer Imágenes/Tablas • Conversión de formato</p>
+            <div class="flex gap-2">
+              <input type="text" id="pymupdf-url" placeholder="https://your-cdn.com/pymupdf-wasm/" class="flex-1 bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 text-sm">
+              <button id="pymupdf-test" class="px-4 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded-lg text-sm font-medium transition-colors" data-i18n="tools:wasmSettings.testButton">Probar</button>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="text-xs text-gray-500" data-i18n="tools:wasmSettings.recommendedLabel">Recomendado:</span>
+              <code class="text-xs text-indigo-400 bg-gray-800 px-2 py-1 rounded flex-1 truncate">https://cdn.jsdelivr.net/npm/@bentopdf/pymupdf-wasm@0.11.16/</code>
+              <button data-copy="https://cdn.jsdelivr.net/npm/@bentopdf/pymupdf-wasm@0.11.16/" class="copy-btn p-1.5 bg-gray-600 hover:bg-gray-500 rounded text-gray-300 hover:text-white transition-colors" title="Copiar al portapapeles" data-i18n-title="tools:wasmSettings.copyTitle">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Ghostscript Section -->
+          <div class="bg-gray-700/50 rounded-lg p-4 border border-gray-600">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="font-semibold text-white">Ghostscript</h3>
+                <p class="text-xs text-gray-400" data-i18n="tools:wasmSettings.ghostscriptSubtitle">Motor de conversión PDF/A</p>
+              </div>
+              <span id="ghostscript-status" class="text-xs px-2 py-1 rounded-full bg-gray-600 text-gray-300" data-i18n="tools:wasmSettings.status.notConfigured">No configurado</span>
+            </div>
+            <p class="text-sm text-gray-400 mb-3" data-i18n="tools:wasmSettings.ghostscriptFeatures">Habilita: Conversión PDF/A-1b, PDF/A-2b, PDF/A-3b • Fuente a contorno</p>
+            <div class="flex gap-2">
+              <input type="text" id="ghostscript-url" placeholder="https://your-cdn.com/ghostscript-wasm/" class="flex-1 bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 text-sm">
+              <button id="ghostscript-test" class="px-4 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded-lg text-sm font-medium transition-colors" data-i18n="tools:wasmSettings.testButton">Probar</button>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="text-xs text-gray-500" data-i18n="tools:wasmSettings.recommendedLabel">Recomendado:</span>
+              <code class="text-xs text-indigo-400 bg-gray-800 px-2 py-1 rounded flex-1 truncate">https://cdn.jsdelivr.net/npm/@bentopdf/gs-wasm@0.1.1/assets/</code>
+              <button data-copy="https://cdn.jsdelivr.net/npm/@bentopdf/gs-wasm@0.1.1/assets/" class="copy-btn p-1.5 bg-gray-600 hover:bg-gray-500 rounded text-gray-300 hover:text-white transition-colors" title="Copiar al portapapeles" data-i18n-title="tools:wasmSettings.copyTitle">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- CPDF Section -->
+          <div class="bg-gray-700/50 rounded-lg p-4 border border-gray-600">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="font-semibold text-white">CoherentPDF</h3>
+                <p class="text-xs text-gray-400" data-i18n="tools:wasmSettings.cpdfSubtitle">Motor de marcadores y metadatos</p>
+              </div>
+              <span id="cpdf-status" class="text-xs px-2 py-1 rounded-full bg-gray-600 text-gray-300" data-i18n="tools:wasmSettings.status.notConfigured">No configurado</span>
+            </div>
+            <p class="text-sm text-gray-400 mb-3" data-i18n="tools:wasmSettings.cpdfFeatures">Habilita: Dividir por marcadores • Editar marcadores • Metadatos PDF</p>
+            <div class="flex gap-2">
+              <input type="text" id="cpdf-url" placeholder="https://your-cdn.com/cpdf/" class="flex-1 bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5 text-sm">
+              <button id="cpdf-test" class="px-4 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded-lg text-sm font-medium transition-colors" data-i18n="tools:wasmSettings.testButton">Probar</button>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="text-xs text-gray-500" data-i18n="tools:wasmSettings.recommendedLabel">Recomendado:</span>
+              <code class="text-xs text-indigo-400 bg-gray-800 px-2 py-1 rounded flex-1 truncate">https://cdn.jsdelivr.net/npm/coherentpdf@2.5.5/dist/</code>
+              <button data-copy="https://cdn.jsdelivr.net/npm/coherentpdf@2.5.5/dist/" class="copy-btn p-1.5 bg-gray-600 hover:bg-gray-500 rounded text-gray-300 hover:text-white transition-colors" title="Copiar al portapapeles" data-i18n-title="tools:wasmSettings.copyTitle">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex gap-3 mt-6">
+          <button id="save-btn" class="btn-gradient flex-1" data-i18n="tools:wasmSettings.saveConfiguration">Guardar configuración</button>
+          <button id="clear-btn" class="px-6 py-2.5 bg-red-600/20 hover:bg-red-600/30 text-red-400 rounded-lg font-medium transition-colors border border-red-600/50" data-i18n="tools:wasmSettings.resetDefaults">Restablecer valores predeterminados</button>
+        </div>
+
+        <!-- License Notice -->
+        <div class="mt-6 p-4 bg-gray-700/30 rounded-lg border border-gray-600/50">
+          <p class="text-xs text-gray-500">
+            <strong class="text-gray-400" data-i18n="tools:wasmSettings.licenseTitle">Aviso de licencia:</strong>
+            <span data-i18n="tools:wasmSettings.licenseDescription">Los módulos externos (PyMuPDF, Ghostscript, CoherentPDF) están licenciados bajo AGPL-3.0 o licencias copyleft similares. Al configurar y usar estos módulos, aceptas sus respectivos términos de licencia. BentoPDF es compatible con cualquier implementación WASM de Ghostscript y PyMuPDF que siga la interfaz esperada.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loader Modal -->
+    <div id="loader-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+      <div class="bg-gray-800 p-8 rounded-lg flex flex-col items-center gap-4 border border-gray-700 shadow-xl">
+        <div class="solid-spinner"></div>
+        <p id="loader-text" class="text-white text-lg font-medium" data-i18n="loader.processing">Procesando...</p>
+      </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div id="alert-modal" class="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50 hidden">
+      <div class="bg-gray-800 rounded-lg shadow-xl p-6 max-w-sm w-full border border-gray-700">
+        <h3 id="alert-title" class="text-xl font-bold text-white mb-2" data-i18n="alert.title">Alerta</h3>
+        <p id="alert-message" class="text-gray-300 mb-6"></p>
+        <button id="alert-ok" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200" data-i18n="common.ok">
+          OK
+        </button>
+      </div>
+    </div>
+
+    
+    <footer class="border-t border-white/10 py-12" style="display: none">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+          <div class="mb-8 md:mb-0">
+            <div class="flex items-center justify-center md:justify-start mb-4">
+              <img id="footer-logo" src="/images/favicon-no-bg.svg" alt="Bento PDF Logo" class="h-10 w-10 mr-3">
+              <span id="footer-brand" class="text-xl font-bold text-white">BentoPDF</span>
+            </div>
+            <p id="footer-copyright" class="text-gray-400 text-sm" data-i18n="footer.copyright">© 2025 BentoPDF. Todos los derechos reservados.</p>
+            <p class="text-gray-400 text-xs mt-2">
+              <span data-i18n="footer.version">Versión</span>
+              <span id="app-version">2.8.8</span>
+            </p>
+          </div>
+    
+          <div>
+            <h3 class="font-bold text-white mb-4" data-i18n="footer.company">Empresa</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="/es/about" class="hover:text-indigo-400" data-i18n="footer.aboutUs">Acerca de Nosotros</a>
+              </li>
+              <li>
+                <a href="/es/faq" class="hover:text-indigo-400" data-i18n="footer.faqLink">Preguntas Frecuentes</a>
+              </li>
+              <li>
+                <a href="/es/contact" class="hover:text-indigo-400" data-i18n="footer.contactUs">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div>
+            <h3 class="font-bold text-white mb-4" data-i18n="footer.legal">Legal</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="/es/licensing" class="hover:text-indigo-400" data-i18n="nav.licensing">Licencias</a>
+              </li>
+              <li>
+                <a href="/es/terms" class="hover:text-indigo-400" data-i18n="footer.termsAndConditions">Términos y Condiciones</a>
+              </li>
+              <li>
+                <a href="/es/privacy" class="hover:text-indigo-400" data-i18n="footer.privacyPolicy">Política de Privacidad</a>
+              </li>
+              <li>
+                <a href="/es/wasm-settings" class="hover:text-indigo-400">Advanced Settings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+<script type="application/ld+json" data-bentopdf-organization="">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BentoPDF",
+  "url": "https://pdf1.cc.cd",
+  "logo": "https://pdf1.cc.cd/images/favicon.svg",
+  "sameAs": []
+}</script></body></html>

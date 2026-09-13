@@ -1,0 +1,23 @@
+# BentoPDF Robots.txt
+# http://localhost:3000
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: http://localhost:3000/sitemap.xml
+
+# Disallow internal/system paths
+Disallow: /api/
+Disallow: /src/
+Disallow: /*.wasm$
+Disallow: /*.wasm.gz$
+Disallow: /*.data.gz$
+Disallow: /*.br$
+
+# Disallow temporary/upload directories
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /uploads/
+
