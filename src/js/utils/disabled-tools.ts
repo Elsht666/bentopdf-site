@@ -10,9 +10,29 @@ function normalizeToolId(toolId: string): string {
   return RENAMED_TOOL_IDS[toolId] ?? toolId;
 }
 
-const disabledToolsSet = new Set<string>(
-  __DISABLED_TOOLS__.map(normalizeToolId)
-);
+// Office-to-PDF conversions rely on the LibreOffice WASM engine
+// (dist/libreoffice-wasm, >25 MiB per file), which exceeds the
+// Cloudflare Pages per-file limit. Disabled for Cloudflare Pages hosting.
+const OFFICE_CONVERT_TOOL_IDS = [
+  'word-to-pdf',
+  'excel-to-pdf',
+  'powerpoint-to-pdf',
+  'wps-to-pdf',
+  'odt-to-pdf',
+  'ods-to-pdf',
+  'odp-to-pdf',
+  'odg-to-pdf',
+  'pages-to-pdf',
+  'pub-to-pdf',
+  'rtf-to-pdf',
+  'vsd-to-pdf',
+  'wpd-to-pdf',
+];
+
+const disabledToolsSet = new Set<string>([
+  ...__DISABLED_TOOLS__.map(normalizeToolId),
+  ...OFFICE_CONVERT_TOOL_IDS.map(normalizeToolId),
+]);
 let runtimeConfigLoaded = false;
 let editorDisabledCategories: string[] = [];
 
