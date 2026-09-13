@@ -29,9 +29,74 @@ const OFFICE_CONVERT_TOOL_IDS = [
   'wpd-to-pdf',
 ];
 
+// Specialist / niche tools that average users rarely need.
+// Disabled to keep the tool grid focused on everyday PDF tasks.
+const UNCOMMON_TOOL_IDS = [
+  // print & prepress
+  'n-up-pdf',
+  'pdf-booklet',
+  'posterize-pdf',
+  'combine-single-page',
+  'divide-pages',
+  'duplex-collate',
+  'rotate-custom',
+  'linearize-pdf',
+  'font-to-outline',
+  'pdf-to-pdfa',
+  'fix-page-size',
+  'page-dimensions',
+  // legal / archival
+  'bates-numbering',
+  'add-page-labels',
+  'timestamp-pdf',
+  'validate-signature-pdf',
+  // document structure
+  'pdf-layers',
+  'bookmark',
+  'table-of-contents',
+  // developer / data
+  'pdf-to-json',
+  'pdf-to-csv',
+  'extract-tables',
+  'prepare-pdf-for-ai',
+  'json-to-pdf',
+  'xml-to-pdf',
+  // rare formats
+  'mobi-to-pdf',
+  'fb2-to-pdf',
+  'cbz-to-pdf',
+  'pdf-to-cbz',
+  'psd-to-pdf',
+  'email-to-pdf',
+  'bmp-to-pdf',
+  'svg-to-pdf',
+  // attachments / metadata
+  'add-attachments',
+  'extract-attachments',
+  'edit-attachments',
+  'view-metadata',
+  'edit-metadata',
+  // color / visual effects
+  'invert-colors',
+  'scanner-effect',
+  'adjust-colors',
+  'background-color',
+  'text-color',
+  // professional processing
+  'rasterize-pdf',
+  'deskew-pdf',
+  'sanitize-pdf',
+  'flatten-pdf',
+  'compare-pdfs',
+  // misc
+  'pdf-to-greyscale',
+  'csv-to-pdf',
+];
+
 const disabledToolsSet = new Set<string>([
   ...__DISABLED_TOOLS__.map(normalizeToolId),
   ...OFFICE_CONVERT_TOOL_IDS.map(normalizeToolId),
+  ...UNCOMMON_TOOL_IDS.map(normalizeToolId),
 ]);
 let runtimeConfigLoaded = false;
 let editorDisabledCategories: string[] = [];
